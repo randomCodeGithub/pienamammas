@@ -1,0 +1,461 @@
+.experience-stories {
+  margin-bottom: 5rem;
+  h2 {
+    color: #7184b2;
+    margin-bottom: 3.9rem;
+  }
+  .person {
+    position: relative;
+    margin-bottom: 19px;
+    .img-block {
+      width: 109px;
+      height: 110px;
+      border-radius: 54% 46% 46% 54% / 50% 44% 56% 50%;
+      margin-right: 14.5px;
+    }
+    .info {
+      h4 {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+      }
+      p {
+        color: #7184b2;
+      }
+    }
+
+    &:before {
+      content: "";
+      background-image: url(../img/experiences_stories/blob_pieredzes_stasti.svg);
+      width: 100%;
+      position: absolute;
+      top: 20px;
+      left: -25px;
+      height: 183px;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  a.pm-btn {
+    font-weight: bold;
+  }
+
+  .col-lg-5 {
+    &:nth-child(odd) {
+      padding-left: 3.4rem;
+    }
+
+    &:nth-child(even) {
+      padding-left: 0;
+    }
+
+    a {
+      color: #7184b2;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: #3b528b;
+      }
+    }
+  }
+
+  .experience-block {
+    width: 392px;
+    > p.body-smaller {
+      margin-bottom: 21.9px;
+    }
+  }
+
+  .pm-btn {
+    margin-top: 4.9rem;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 3.8rem;
+    .col-lg-5 {
+      padding-left: 0rem !important;
+    }
+
+    h2 {
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    .pm-btn {
+      margin-top: 0rem;
+      background-size: contain;
+    }
+
+    .experience-block {
+      width: 352px;
+      margin-bottom: 3rem;
+
+      > p.body-smaller {
+        padding-right: 4.6rem;
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    .person {
+      margin-bottom: 1rem;
+      &:before {
+        top: 18px;
+        left: -39px;
+      }
+
+      .info {
+        h4 {
+          font-size: 32px;
+          line-height: 38px;
+          margin-top: 1.5rem;
+        }
+
+        p {
+          line-height: 23px;
+        }
+      }
+
+      .img-block {
+        margin-right: 24.5px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-bottom: 7.4rem;
+    h2 {
+      margin-top: 5.8rem;
+    }
+
+    h4 {
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .person {
+      .info {
+        p {
+          line-height: 23px;
+        }
+      }
+    }
+
+    .pm-btn {
+      margin-top: 3rem;
+    }
+
+    p.body-smaller {
+      line-height: 28px;
+    }
+
+    .col-lg-5 {
+      padding-left: 6.6rem !important;
+      margin-bottom: 3.7rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.experience-stories-page {
+  h1 {
+    color: #6381c4;
+    margin-bottom: 4.2rem;
+  }
+
+  p {
+    color: #707070;
+    line-height: 42px;
+  }
+
+  .container {
+    .col-lg-4 {
+      padding-left: 0;
+    }
+  }
+
+  .person {
+    margin-top: 0.5rem;
+    h3 {
+      color: #707070;
+    }
+    p {
+      color: #6381c4;
+      font-weight: bold;
+      line-height: 23px;
+    }
+
+    .background-blob {
+      content: "";
+      background-image: url(../img/experiences_stories/blob_pieredzes_stasti.svg);
+      width: 100%;
+      position: absolute;
+      top: 38px;
+      left: 0px;
+      height: 183px;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    .person-foto-svg {
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
+    .img-block {
+      z-index: 1;
+      position: relative;
+      width: 183px;
+      height: 184px;
+      margin-left: 2.6rem;
+      margin-top: 0.55rem;
+      transform: scaleY(-1);
+      clip-path: url(#story-photo);
+      margin-bottom: 2.8rem;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: scaleY(-1);
+        background: var(--image);
+        background-size: cover;
+        filter: grayscale(100%);
+        background-position-x: center;
+      }
+    }
+
+    img {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .col-lg-8 {
+    padding-left: 0.3rem;
+    padding-right: 0rem;
+
+
+    p {
+      margin-bottom: 2.6rem;
+    }
+
+  }
+
+
+  blockquote {
+    margin-top: 2rem;
+    margin-bottom: 7.6rem;
+    position: relative;
+    h3 {
+      color: #f48576;
+      text-align: center;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 80px;
+      height: 60px;
+      background-image: url(../img/quote.svg);
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      top: -3.7rem;
+      left: -10rem;
+    }
+    &:after {
+      bottom: -4rem;
+      right: -10rem;
+      transform: scale(-1);
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    h1 {
+      margin-bottom: 1.2rem;
+    }
+
+    .person {
+      margin-bottom: 1rem;
+      h3 {
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 0.4rem;
+      }
+
+      p {
+        font-size: 24px;
+      }
+      .img-block {
+        width: 131px;
+        height: 131px;
+        margin-top: 0rem;
+        margin-left: 2.7rem;
+        margin-bottom: 1.5rem;
+      }
+      .background-blob {
+        width: 251px;
+        height: 130px;
+        top: 28px;
+        left: 13px;
+      }
+    }
+
+    .col-lg-8 {
+      padding-left: 0rem;
+
+      p {
+        margin-bottom: 1.9rem;
+        line-height: 30px;
+      }
+    }
+
+    .col-lg-9 {
+      padding: 0;
+    }
+
+    blockquote {
+      margin-top: 1.6rem;
+      margin-bottom: 0.6rem;
+      &:before,
+      &:after {
+        background-size: 100%;
+        width: 49px;
+        height: 37px;
+      }
+      &:before {
+        top: -2.5rem;
+        left: -1.5rem;
+      }
+
+      h3 {
+        line-height: 34px;
+      }
+
+      &:after {
+        bottom: 0.2rem;
+        right: -1.6rem;
+      }
+    }
+
+    & + .experience-stories {
+      .person {
+        margin-bottom: 1.1rem;
+      }
+      h2 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 2.4rem;
+      }
+
+      .experience-block {
+        > p.body-smaller {
+          line-height: 24px;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+      margin-bottom: 4.7rem;
+    }
+    .person {
+      display: flex;
+      margin-bottom: 2.4rem;
+
+      h3 {
+        font-size: 50px;
+        line-height: 61px;
+        margin-top: 1.3rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .background-blob {
+        width: 250px;
+        height: 130px;
+        top: 28px;
+      }
+      .img-block {
+        width: 130px;
+        height: 130px;
+        margin-right: 8.4rem;
+        margin-left: 1.8rem;
+        margin-top: 0.1rem;
+      }
+    }
+
+    .col-lg-8 {
+      padding-left: 0rem;
+      p {
+        margin-bottom: 1.9rem;
+        line-height: 30px;
+      }
+    }
+
+    blockquote {
+      margin-top: 2.8rem;
+      margin-bottom: 5.7rem;
+
+      &:before {
+        left: -5.8rem;
+      }
+      &:after {
+        bottom: -3.3rem;
+        right: -5.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .person {
+      .background-blob {
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.experience-stories-page + .experience-stories {
+  padding-top: 1.8rem;
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    h2 {
+      margin-top: 1.3rem;
+      margin-bottom: 3rem;
+      font-size: 40px;
+    }
+
+    .col-lg-5 {
+      margin-bottom: 2.7rem;
+    }
+
+    .pm-btn {
+      margin-top: 0.45rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .experience-block {
+      margin-bottom: 40px;
+    }
+  }
+}

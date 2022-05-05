@@ -1,0 +1,556 @@
+.security {
+  h2 {
+    color: #7184b2;
+    margin-bottom: 31px;
+  }
+
+  p {
+    margin-bottom: 66px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 1.3rem;
+
+    h2 {
+      margin-bottom: 10px;
+      margin-top: 1.9rem;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 28px;
+    }
+    .pm-btn {
+      background-size: 96%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-bottom: 9.8rem;
+    h2 {
+      margin-bottom: 18px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 44px;
+    }
+
+    .pm-btn {
+      background-size: contain;
+    }
+  }
+}
+
+.security-page {
+  h1,
+  h3,
+  h4 {
+    color: #7184b2;
+  }
+
+  p,
+  ul p {
+    color: #707070;
+  }
+
+  p {
+    &.body-small {
+      line-height: 34px;
+      margin-bottom: 2.1rem;
+    }
+  }
+  ul {
+    padding-right: 9.1rem;
+    padding-left: 2.3rem;
+    list-style: none;
+
+    p.body-small {
+      margin-bottom: 0;
+    }
+
+    li {
+      position: relative;
+      &::before {
+        content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        position: absolute;
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        font-size: 32px;
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -0.7em; /* Also needed for space (tweak if needed) */
+        top: -10.5px;
+        height: 100%;
+        display: flex;
+      }
+    }
+  }
+
+  h1 {
+    line-height: 120px;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 1.5rem;
+
+    &:not(h3:first-child) {
+      margin-top: 3.6rem;
+    }
+  }
+
+  h4 {
+    margin-top: 3.8rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: #f48576;
+    text-decoration: underline;
+  }
+  .col-lg-9 {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+
+  .orange-list {
+    margin-top: 4.4rem;
+    > p {
+      color: #f48576;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      li {
+        &::before {
+          content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          color: #f48576; /* Change the color */
+        }
+      }
+    }
+  }
+
+  .orange-list,
+  .grey-list {
+    border: 8px solid #faf2ee;
+  }
+
+  .grey-list {
+    margin-bottom: 2.2rem;
+    > p {
+      color: #6381c4;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    ul {
+      li {
+        &::before {
+          content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          color: #707070; /* Change the color */
+        }
+      }
+    }
+  }
+
+  .col-lg-12 {
+    padding: 0 3.8rem;
+  }
+
+  table {
+    // width: 1160px !important;
+    margin-bottom: 5.1rem;
+    thead {
+      height: 125px;
+      p {
+        font-weight: 600;
+        width: 10px;
+      }
+      td {
+        border-top: 0 !important;
+
+        &:nth-child(5) {
+          p {
+            margin-top: -0.7rem;
+          }
+        }
+      }
+
+      tr {
+        td.temperature {
+          &:first-child {
+            width: 12% !important;
+          }
+        }
+      }
+    }
+
+    p {
+      line-height: 19px;
+    }
+
+    tbody {
+      tr {
+        height: 8.2rem !important;
+
+        &:last-child {
+          td {
+            border-bottom: 0;
+          }
+        }
+
+        &:first-child {
+          height: 65px !important;
+          td {
+            border-top: 0;
+            height: 65px;
+            font-weight: 600;
+          }
+        }
+
+        &:nth-child(2) {
+          height: 65px !important;
+          td {
+            font-weight: 600;
+            border-top: 0;
+            height: 65px;
+          }
+        }
+
+        td {
+          &:first-child {
+            font-weight: 600;
+            p {
+              width: 54%;
+            }
+          }
+          p {
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    td {
+      border: 1px solid #f48576;
+      width: 9%;
+      vertical-align: middle;
+      &:first-child {
+        border-left: 0;
+        // padding: 1.8rem 4rem 2.1rem 4.2rem;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 65%;
+      }
+
+      &:not(td:first-child) {
+        p {
+          text-align: center;
+        }
+      }
+
+      &:first-child {
+        width: 17.2% !important;
+        p {
+          margin-left: 1.4rem;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 16.4% !important;
+      }
+      &:nth-child(3) {
+        width: 14.4% !important;
+      }
+      &:nth-child(4) {
+        width: 14.5% !important;
+      }
+      &:nth-child(5) {
+        width: 14.4% !important;
+      }
+
+      &.last-col {
+        height: 54px;
+      }
+
+      &:last-child {
+        border-right: 0;
+        // padding-bottom: 0.9rem;
+        // height: 55px;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    h1 {
+      line-height: 48px;
+      margin-bottom: 0.1rem;
+    }
+
+    h3 {
+      margin-top: 27px;
+      margin-bottom: 1.4rem;
+      font-size: 24px;
+
+      &:not(h3:first-child) {
+        margin-top: 2.8rem;
+      }
+    }
+
+    h4 {
+      margin-top: -0.6rem;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    h4 + p {
+      margin-top: 1rem;
+    }
+
+    .orange-list,
+    .grey-list {
+      + h4 {
+        margin-top: 4rem;
+      }
+    }
+
+    a {
+      word-break: break-word;
+    }
+
+    p {
+      &.body-small {
+        line-height: 30px;
+        margin-bottom: 1.9rem;
+      }
+      &.body-smaller {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    .grey-list {
+      margin-bottom: 1.6rem;
+      > p {
+        margin-bottom: 0;
+      }
+
+      ul {
+        padding-right: 0rem;
+        padding-left: 2rem;
+      }
+    }
+
+    ul {
+      padding-right: 0.1rem;
+      padding-left: 2.1rem;
+
+      li {
+        &::before {
+          top: -8px;
+          font-size: 27px;
+        }
+      }
+    }
+
+    .col-lg-9 {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .orange-list {
+      margin-top: -0.5rem;
+      > p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .scroll-right {
+      right: -41px;
+      margin-top: -5.35rem;
+      h2 {
+        font-size: 80px;
+      }
+    }
+
+    .table-area {
+      .right-gradient {
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 100%;
+        right: 0;
+        background: transparent
+          linear-gradient(89deg, #ffffff00 0%, #ffffff 100%) 0% 0% no-repeat
+          padding-box;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    table {
+      width: 743px !important;
+      margin-bottom: 3.2rem;
+      p {
+        font-size: 14px !important;
+        line-height: 16px !important;
+      }
+
+      tr:not(tr:nth-child(2)) {
+        td {
+          &:first-child {
+            p {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+
+      td {
+        &:first-child {
+          width: 12.2% !important;
+        }
+
+        &:nth-child(2) {
+          width: 17.6% !important;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          width: 17.4% !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .col-lg-12 {
+      padding: 0;
+      overflow-x: none;
+    }
+
+    .scroll-right {
+      z-index: 2;
+      cursor: pointer;
+      top: 50%;
+      h2 {
+        color: #e0e5f2;
+      }
+    }
+
+    .col-lg-12 {
+      overflow-x: scroll;
+    }
+
+    table {
+      border-collapse: inherit !important;
+      tr {
+        &:not(tr:nth-child(2)) {
+          td {
+            &:first-child {
+              position: sticky;
+              left: 0;
+              top: 0;
+              background: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+      line-height: 61px;
+      margin-bottom: -0.7rem;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 39px;
+      margin-top: 41px;
+
+      &:first-child {
+        padding-left: 1.35rem;
+      }
+    }
+
+    h4 {
+      margin-top: 4.6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    ul {
+      padding-right: 0;
+      padding-left: 2.3rem;
+
+      li {
+        &:before {
+          font-size: 28px;
+          margin-left: -0.6em;
+          top: -6.1px;
+        }
+      }
+    }
+
+    p.body-smaller {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    .orange-list {
+      margin-top: -0.3rem;
+
+      > p {
+        line-height: 34px;
+        margin-bottom: 2.1rem;
+      }
+    }
+
+    .col-lg-9 {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .scroll-right {
+      right: -68px;
+      top: 50%;
+      margin-top: -3.9rem;
+      h2 {
+        font-size: 120px;
+      }
+    }
+
+    table {
+      width: 1036px !important;
+
+      p.body-smaller {
+        line-height: 19px;
+      }
+
+      tr {
+        &:not(tr:nth-child(2)) {
+          td {
+            &:first-child {
+              position: sticky;
+              left: 0;
+              top: 0;
+              background: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

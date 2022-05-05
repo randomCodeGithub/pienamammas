@@ -1,0 +1,35 @@
+.privacy-policy {
+  h1 {
+    margin-bottom: 77px;
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: #707070;
+    margin-bottom: 2.1rem;
+  }
+
+  a {
+    color: #f48576;
+    text-decoration: underline;
+
+    &:hover,
+    &:active {
+      font-weight: 600;
+    }
+
+    &:active {
+      color: #e95a46;
+    }
+  }
+
+  h1,
+  h4,
+  h5 {
+    color: #7184b2;
+  }
+}

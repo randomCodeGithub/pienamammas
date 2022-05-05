@@ -1,0 +1,380 @@
+.join {
+  margin-bottom: -1.2rem;
+  h1 {
+    color: #f48576;
+    margin-bottom: 4rem;
+  }
+  h2 {
+    color: #6381c4;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    color: #6381c4;
+  }
+
+  .choice {
+    margin-bottom: 3.6rem;
+    a {
+      padding: 24px 20.6px;
+
+      &:first-child {
+        margin-right: 0.6rem;
+      }
+    }
+  }
+
+  a.remove-profile {
+    text-decoration: underline;
+    color: #f48576;
+  }
+
+  .choice + a {
+    text-decoration: none;
+    h4 {
+      text-decoration: underline;
+    }
+  }
+
+  .form-group + p {
+    margin-top: -0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    margin-top: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .form-group.row {
+    .col-lg-6 {
+      &:first-child {
+        padding: 0 1.4rem 0 1rem;
+      }
+      &:nth-child(2) {
+        padding: 0 1rem 0 2.6rem;
+      }
+    }
+
+    [class*="col-"] {
+      > .form-group {
+        margin-bottom: 20px;
+      }
+      &:last-child {
+        > .form-group {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  #upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .img-upload-block {
+    display: flex;
+    align-items: center;
+    margin-top: 3.3rem;
+    margin-bottom: 1.8rem;
+    .img-block {
+      background-color: #f0f3f9;
+      border-radius: 66px;
+      width: 132px;
+      height: 132px;
+      margin-right: 2.7rem;
+    }
+    label.body-small {
+      color: #6381c4;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+  }
+
+  button {
+    margin-top: 1.6rem;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: -1.2rem;
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 1.2rem;
+    }
+
+    .choice {
+      display: flex;
+      margin-bottom: 1.7rem;
+      a {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 15px 12.6px;
+      }
+    }
+
+    .orange-link {
+      h4 {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+
+    .col-12 {
+      padding: 0;
+    }
+
+    form {
+      margin-top: 0.85rem;
+      margin-bottom: -0.5rem;
+    }
+
+    .form-group {
+      &.row {
+        .col-12 {
+          padding: 0 15px !important;
+
+          &:first-child {
+            margin-bottom: 1rem;
+          }
+
+          &:nth-child(2) {
+            .select-arrow {
+              margin-bottom: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .img-upload-block {
+      margin-top: 2.3rem;
+      margin-bottom: 2.7rem;
+
+      .img-block {
+        margin-right: auto;
+      }
+    }
+
+    .checkbox {
+      margin-bottom: 0.7rem;
+      .body-smaller {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .cr {
+        left: -4px;
+        margin-right: 0.5em;
+        margin-bottom: 3.8rem;
+        margin-top: 0.1rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-bottom: 0.7rem;
+    h1 {
+      margin-top: 1rem;
+      margin-bottom: 1.6rem;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 2.1rem;
+    }
+
+    .choice {
+      margin-bottom: 2.5rem;
+    }
+
+    form {
+      margin-top: 2.45rem;
+      margin-bottom: -2rem;
+    }
+
+    .img-upload-block {
+      margin-bottom: 2rem;
+    }
+
+    .checkbox {
+      margin-left: 0.8rem;
+      .body-smaller {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    button {
+      margin-top: 2.1rem !important;
+    }
+  }
+}
+
+// REMOVE OVERLAY
+
+.remove-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  h3 {
+    font-size: 40px;
+    line-height: 48px;
+    color: #f48576;
+    margin-bottom: 35px;
+  }
+
+  p {
+    line-height: 24px;
+    padding: 0 3.6rem;
+    margin-bottom: 49px;
+    color: #707070;
+  }
+
+  button {
+    margin-right: 2rem;
+  }
+
+  button, a {
+    padding: 28px 54px;
+  }
+
+  a {
+    background-image: url(./../img/btns/btn_transparent_with_border.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #f48576;
+  }
+
+  &,
+  .remove-area {
+    text-align: center;
+    border-radius: 27px;
+    z-index: 50;
+  }
+
+  .remove-area {
+    width: 554px;
+    background-color: #fff;
+    padding: 4.7rem 0;
+  }
+  .background-color {
+    background-color: #000;
+    opacity: 0.2;
+  }
+
+  @media (max-width: 767.98px) {
+    h3 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 21px;
+    }
+    p {
+      font-size: 16px;
+      padding: 0 2.6rem;
+      margin-bottom: 5px;
+    }
+    .remove-area {
+      width: 100%;
+      padding: 3.5rem 0;
+      padding-bottom: 2.8rem;
+    }
+
+    button {
+      margin-left: 0.2rem;
+margin-right: 1.1rem;
+    }
+
+    button,
+    a {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 28px 37px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+.login-page,
+.join {
+  button {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .col-lg-6 {
+    padding: 0 0.2rem;
+  }
+}
+
+.login-page {
+  margin-bottom: -1.8rem;
+  h1 {
+    color: #6381c4;
+    margin-bottom: 3.2rem;
+  }
+
+  button {
+    margin-top: 2.8rem;
+    padding: 1.1rem 3.2rem;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #f48576;
+  }
+
+  @media (max-width: 767.98px) {
+    h1 {
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    margin-bottom: -0.2rem;
+    .body-small {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .col-lg-6 {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-bottom: 9.2rem;
+    h1 {
+      margin-top: 1.1rem;
+      margin-bottom: 2.9rem;
+    }
+  }
+}
+
+.join.edit-profile {
+  h1 {
+    color: #6381c4;
+  }
+}

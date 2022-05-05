@@ -1,0 +1,523 @@
+.advertisements {
+  margin-bottom: -1.7rem;
+  h1 {
+    color: #6381c4;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  p,
+  .user-email,
+  .show-email {
+    color: #707070;
+  }
+
+  .choice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    span {
+      h3 {
+        color: #e0e5f2;
+      }
+
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      // cursor: pointer;
+      opacity: 0.88;
+      &.selected {
+        cursor: auto;
+        opacity: 1;
+        h3 {
+          color: #6381c4;
+        }
+        a {
+          cursor: auto;
+        }
+      }
+    }
+  }
+
+  input.form-control,
+  select.form-control {
+    height: 40px;
+  }
+
+  input.form-control,
+  select.form-control,
+  #checkboxes {
+    width: 243px;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .filters {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 3.55rem;
+
+    p.body-smaller {
+      margin-left: 0rem;
+      margin-right: 1.8rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .data-name {
+    margin-right: 0.35rem;
+    width: 105px;
+    p {
+      font-weight: 600;
+      color: #f48576;
+    }
+  }
+
+  &-block {
+    width: 359px;
+    border-radius: 17px;
+    padding: 1.3rem 1.2rem 0.6rem 1.2rem;
+    background-color: #faf2ee;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    h4 {
+      color: #f48576;
+      margin-left: 3.3rem;
+      margin-top: -0.6rem;
+      width: 136px;
+    }
+
+    .fep-form-field-message_title {
+      display: none;
+    }
+
+    &-form {
+      padding: 1rem;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      background: rgba(0, 0, 0, 0.2);
+
+      .fep-button {
+        font-family: Raleway-VariableFont_wght;
+        text-transform: uppercase;
+      }
+
+      .fep-label label {
+        color: #fff;
+      }
+
+      .close-email-btn {
+        height: 26px;
+        cursor: pointer;
+        right: 0.9rem;
+        top: 16px;
+        &,
+        .close-icon {
+          width: 25px;
+        }
+
+        .close-icon {
+          position: absolute;
+          top: 11px;
+          
+          &:before, &::after {
+            content: "";
+            top: 0;
+            background-color: #fff;
+            height: 4px;
+            border-radius: 4.5px;
+            position: absolute;
+            width: 100%;
+          }
+
+          &::before {
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    .fep-form textarea {
+      height: 150px;
+    }
+
+    p.notification {
+      border-radius: 17px;
+      color: #f48576;
+      padding-bottom: 0.3rem;
+    }
+
+    .person {
+      margin-bottom: 0.9rem;
+    }
+    .img-block {
+      width: 132px;
+      height: 132px;
+      border-radius: 125px;
+      background-color: #ffffff;
+      filter: grayscale(0) !important;
+    }
+
+    .user-email {
+      display: none;
+    }
+    .show-email {
+      text-decoration: underline;
+      cursor: pointer;
+      width: max-content;
+    }
+  }
+
+  a.pm-btn {
+    margin: 0 auto;
+    font-weight: bold;
+    color: #fff;
+    padding: 17px 30px;
+    margin-top: 4.1rem;
+  }
+
+  .row {
+    &:last-child {
+      .col-lg-4 {
+        padding: 0;
+      }
+    }
+  }
+
+  .selectBox {
+    position: relative;
+    margin-right: 1rem;
+
+    &.select-arrow {
+      &::before {
+        top: 0.8rem;
+        right: 1.2rem;
+      }
+    }
+  }
+
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  #checkboxes {
+    display: none;
+    background-color: #e0e5f2;
+    margin-top: -0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 0.9rem;
+
+    .list {
+      width: 225px;
+      max-height: 157px;
+      overflow-y: auto;
+    }
+
+    .checkbox .cr {
+      background-color: #f0f3f9;
+      margin-right: 0.4em;
+      margin-bottom: 0rem;
+    }
+  }
+
+  #checkboxes label {
+    display: block;
+  }
+
+  .user-info {
+    margin-bottom: 1.75rem;
+    &__name {
+      width: 102px;
+      margin-right: 0.6rem;
+      p {
+        color: #f48576;
+        font-weight: 600;
+      }
+    }
+    &__value {
+      width: 190px;
+      word-break: break-word;
+      p {
+        color: #707070;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: -0.4rem;
+    h1 {
+      margin-bottom: 1.4rem;
+    }
+
+    h4 {
+      margin-left: 2.6rem;
+      margin-top: -0.1rem;
+    }
+    .choice {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.95rem;
+      h3 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 0.3rem;
+      }
+    }
+
+    .user-info {
+      margin-bottom: 0.75rem;
+      &__value {
+        width: 162px;
+      }
+
+      .show-email {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .users {
+      .col-lg-4 {
+        padding: 0;
+      }
+    }
+
+    a.pm-btn {
+      margin-top: 1.7rem;
+    }
+
+    .filters {
+      margin-left: 0.1rem;
+      margin-right: 0;
+      margin-bottom: 2.45rem;
+
+      p {
+        margin-bottom: 0.65rem;
+      }
+      .form-group {
+        &,
+        .form-control {
+          width: 100%;
+        }
+      }
+
+      input.body-smaller,
+      select.body-smaller,
+      .checkbox label.body-smaller {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      form {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    &-block {
+      width: 100%;
+      margin-bottom: 0.9rem;
+      padding-bottom: 1.05rem;
+
+      .img-block {
+        width: 97px;
+        height: 97px;
+      }
+
+      h4 {
+        width: 90px;
+      }
+
+      .fep-form textarea {
+        height: 123px;
+      }
+
+      ul {
+        margin-bottom: 0;
+        &.data-name {
+          margin-right: 0;
+        }
+        li {
+          p.body-smaller {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+
+      .info {
+        margin-left: -0.3rem;
+      }
+    }
+
+    .row {
+      &:first-child {
+        .col-lg-12 {
+          padding: 0;
+        }
+      }
+    }
+
+    #checkboxes {
+      width: 100%;
+      padding-top: 0.8rem;
+
+      .list {
+        width: 257.5px;
+        padding-top: 0.2rem;
+      }
+
+      .checkbox {
+        margin-left: 0.9rem;
+        margin-bottom: 0.85rem;
+        .cr {
+          margin-top: 0;
+          margin-right: 2.6rem;
+        }
+      }
+    }
+
+    .selectBox {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    h4 {
+      font-size: 32px;
+      line-height: 39px;
+    }
+    .body-smaller {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .filters {
+      flex-direction: column;
+      align-items: start;
+
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-bottom: 0rem;
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+
+    h4 {
+      margin-top: -0.3rem;
+    }
+
+    a.pm-btn {
+      margin-top: 0.7rem;
+    }
+
+    .user-info {
+      margin-bottom: 2.25rem;
+    }
+
+    ul {
+      li {
+        margin-bottom: 1.06rem;
+      }
+    }
+    .choice {
+      padding-left: 2.6rem;
+      padding-right: 1rem;
+      margin-bottom: 1.55rem;
+      h3 {
+        font-size: 32px;
+        line-height: 39px;
+      }
+    }
+
+    &-block {
+      margin-bottom: 2.5rem;
+      padding-bottom: 0.3rem;
+
+      h4 {
+        width: 136px;
+      }
+    }
+
+    .person {
+      margin-bottom: 1.1rem;
+    }
+
+    .filters {
+      margin: 0;
+      margin-bottom: 3.75rem;
+
+      p.body-smaller {
+        padding-left: 1.2rem;
+        margin-bottom: 1.35rem;
+      }
+
+      > .form-group {
+        padding-left: 1.2rem;
+
+        select {
+          padding-left: 1.7rem;
+        }
+
+        input {
+          padding-left: 1.9rem;
+        }
+      }
+    }
+
+    #checkboxes {
+      .list {
+        padding-top: 0.1rem;
+      }
+    }
+
+    .checkbox {
+      margin-bottom: 0.7rem;
+
+      .cr {
+        margin-top: 0.1rem;
+      }
+    }
+  }
+}
+
+// CUSTOM SCROLLBAR
+.simplebar-scrollbar:before {
+  width: 4px;
+  background: #6381c4 !important;
+  border-radius: 10px !important;
+}

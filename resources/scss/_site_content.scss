@@ -1,0 +1,535 @@
+// .bg-gradient {
+//   background: rgb(20,155,179);
+//   background: -moz-radial-gradient(circle, rgba(20,155,179,1) 0%, rgba(0,138,156,1) 100%);
+//   background: -webkit-radial-gradient(circle, rgba(20,155,179,1) 0%, rgba(0,138,156,1) 100%);
+//   background: radial-gradient(circle, rgba(20,155,179,1) 0%, rgba(0,138,156,1) 100%);
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#149bb3",endColorstr="#008a9c",GradientType=1);
+// }
+
+// .section {
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+// }
+
+.orange-color {
+  color: $red;
+}
+
+.blue-color {
+  color: $blue;
+}
+
+.white-color {
+  color: $white;
+}
+
+/*
+Other Milk Solution
+*/
+.other-milk-solution {
+  position: relative;
+  background-color: #faf2ee;
+  padding-bottom: 6.8rem;
+  h2,
+  h3 {
+    color: $red;
+  }
+
+  h2 {
+    margin-top: 45px;
+    margin-bottom: 38px;
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .row {
+    &:first-child {
+      margin-bottom: 58.6px;
+      p {
+        line-height: 27px;
+        color: #707070;
+      }
+
+      .col-md-4 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .img-block {
+        width: 104px;
+        height: 104px;
+        margin: 0 auto 30px auto;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 13px;
+      }
+    }
+
+    ul.attention {
+      padding-left: 2.1rem;
+      margin-bottom: 105px;
+
+      li {
+        margin-bottom: -0.2rem;
+
+        p {
+          color: #f48576;
+          padding-top: 0.3rem;
+          line-height: 39px;
+          font-weight: 600;
+        }
+
+        .img-block {
+          width: 55px;
+          height: 49px;
+          margin-right: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    &.mothers {
+      .today {
+        margin-left: 11.5rem;
+        padding-top: 0.9rem;
+        margin-right: 3rem;
+
+        h3 {
+          white-space: nowrap;
+        }
+      }
+      .mother-types {
+        display: flex;
+        padding-top: 0.2rem;
+        h3,
+        h4 {
+          margin-bottom: 0;
+        }
+
+        h3 {
+          line-height: 45px;
+        }
+
+        .give-milk,
+        .take-milk {
+          position: relative;
+          padding: 18px 47px 9px 41px;
+          z-index: 1;
+          text-decoration: none;
+
+          h3 {
+            margin-right: 0.5rem;
+            // margin-left: 0.3rem;
+          }
+
+          h4 {
+            padding-top: 0.3rem;
+          }
+
+          p {
+            font-weight: 600;
+            line-height: 25px;
+          }
+        }
+
+        .give-milk {
+          margin-right: 32px;
+          h3,
+          h4,
+          p {
+            color: #fff;
+          }
+
+          &:hover {
+            svg {
+              .a {
+                fill: #e95a46;
+              }
+            }
+          }
+          svg {
+            .a {
+              fill: #f48576;
+            }
+          }
+        }
+
+        .take-milk {
+          h3,
+          h4,
+          p {
+            color: #f48576;
+          }
+
+          h3 {
+            margin-left: 0.2rem;
+          }
+
+          p {
+            line-height: 19px;
+            margin-left: -0.3rem;
+          }
+
+          &:hover {
+            h3,
+            h4,
+            p {
+              color: #e95a46;
+            }
+          }
+
+          svg {
+            .a {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    background-image: url(../img/background-pink.svg);
+    position: absolute;
+    top: -71px;
+    width: 100%;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: 122%;
+    background-position-x: center;
+  }
+
+  @media (max-width: 767.98px) {
+    &::before {
+      width: 1678px;
+      height: 845px;
+      left: -12rem;
+      background-size: 100%;
+      top: -72px;
+    }
+    .row {
+      &:first-child {
+        margin-bottom: 35.6px;
+        .img-block {
+          margin-bottom: 20px;
+        }
+
+        p:not(.notice-block p) {
+          line-height: 24px;
+        }
+      }
+
+      &:nth-child(3) {
+        .col-12 {
+          justify-content: center;
+        }
+        .today-block {
+          align-items: center;
+          &,
+          .mother-types {
+            flex-direction: column;
+
+            .give-milk,
+            .take-milk {
+              padding-top: 0.6rem;
+              padding: 19px 47px 9px 32px;
+            }
+
+            .give-milk {
+              margin-bottom: 1rem;
+              margin-right: 0;
+              margin-left: 0.2rem;
+
+              svg {
+                width: 212px;
+              }
+            }
+
+            .take-milk {
+              margin-left: 0.5rem;
+              svg {
+                width: 198px;
+              }
+            }
+          }
+          .today {
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 0.35rem;
+            margin-bottom: -0.1rem;
+          }
+
+          h4 {
+            font-size: 32px;
+          }
+
+          h3 {
+            font-size: 40px;
+            line-height: 45px;
+          }
+        }
+      }
+
+      ul.attention {
+        padding-left: 0;
+        margin-bottom: 55px;
+
+        li {
+          margin-bottom: 1.2rem;
+          p {
+            width: 220px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .col-9 {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    .notice-block {
+      margin-top: -1.4rem;
+      margin-bottom: 0.5rem;
+
+      .notice {
+        font-size: 9px;
+        line-height: 16px;
+        font-weight: 600;
+        padding-right: 0.15rem;
+
+        .required-symbol {
+          color: #f48576;
+          font-size: 23px;
+          line-height: 23px;
+          position: relative;
+          left: 1.9px;
+          top: 2.66px;
+        }
+      }
+
+      h4 {
+        margin-bottom: 0.1rem;
+
+        &.orange-color {
+          margin-top: 0.4rem;
+        }
+      }
+
+      .choice {
+        margin-top: 0.9rem;
+        margin-left: -0.05rem;
+        margin-bottom: 0.95rem;
+        display: flex;
+      }
+
+      a {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 17px 13px;
+        padding-right: 12px;
+        padding-left: 14px;
+        letter-spacing: -0.002em;
+
+        &:first-child {
+          margin-right: 0.8rem;
+        }
+      }
+
+      .body-small {
+        margin-bottom: 0.6rem;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+
+        &.body-smaller {
+          margin-bottom: 0.6rem;
+        }
+      }
+      h4 {
+        text-transform: uppercase;
+        font-size: 28px;
+        line-height: 20px;
+      }
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .col-12 {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-top: -2.05rem;
+    padding-bottom: 5.4rem;
+    &:before {
+      width: 180%;
+      top: -41px;
+      left: -2rem;
+    }
+
+    h2 {
+      margin-top: 0.5rem;
+      margin-bottom: 15px;
+    }
+
+    .row {
+      ul.attention {
+        padding-left: 0;
+        margin-bottom: 60px;
+
+        li {
+          margin-bottom: 0.2rem;
+          p {
+            padding-top: 0.1rem;
+            line-height: 24px;
+            width: 500px;
+          }
+        }
+      }
+      &:first-child {
+        margin-bottom: 27.6px;
+        .col-md-4 {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .img-block {
+          margin: 0 auto 15px auto;
+        }
+
+        p {
+          line-height: 24px;
+        }
+      }
+
+      &:nth-child(2) {
+        .col-12 {
+          padding-right: 0;
+          padding-left: 0.2rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .today-block {
+          h4 {
+            font-size: 32px;
+          }
+        }
+        .col-12 {
+          padding-left: 0.2rem;
+          padding: 0;
+        }
+        .today {
+          margin-left: 0;
+          display: flex;
+          align-items: center;
+          padding-top: 2rem;
+          margin-right: 2.4rem;
+          width: 105px;
+        }
+
+        .mother-types {
+          .give-milk,
+          .take-milk {
+            font-size: 32px;
+            padding-left: 2rem;
+            padding-right: 0;
+
+            h3 {
+              margin-right: 0.7rem;
+            }
+          }
+
+          .give-milk {
+            padding-right: 20px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-left: 1.8rem;
+            margin-right: 0;
+            svg {
+              width: 212px;
+            }
+          }
+
+          .take-milk {
+            margin-left: 3.2rem;
+
+            svg {
+              width: 197px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.person {
+  position: relative;
+  .img-block {
+    filter: grayscale(100%);
+  }
+  .info {
+    h4 {
+      color: #707070;
+      line-height: 39px;
+    }
+
+    p {
+      font-weight: 600;
+    }
+  }
+}
+
+.experience-block {
+  > p.body-smaller {
+    line-height: 28px;
+    color: #707070;
+  }
+}
+
+.expert-opinion-page,
+.experience-stories-page {
+  .col-lg-8 {
+    .fade-bottom {
+      position: absolute;
+      z-index: 0;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background-image: url(../img/bottom-fade.png);
+      background-position: top;
+    }
+  }
+
+  a.read-more {
+    color: #7184b2;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    &:hover {
+      color: #3b528b;
+    }
+  }
+}

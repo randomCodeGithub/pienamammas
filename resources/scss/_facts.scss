@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.facts {
+  margin-bottom: 0.44rem;
+  padding-top: 4.3rem;
+  transition: all 0.3s ease-in-out;
+
+  h2 {
+    color: #7184b2;
+    padding-left: 0.7rem;
+    margin-bottom: 2.1rem;
+  }
+  p,
+  li {
+    color: #707070;
+  }
+
+  ul {
+    li {
+      font-family: Raleway-VariableFont_wght;
+    }
+  }
+
+  .next-arrow,
+  .prev-arrow {
+    position: absolute;
+    top: 35.7%;
+    cursor: pointer;
+    z-index: 1;
+    h1 {
+      color: #7184b2;
+      font-size: 120px;
+      line-height: 146px;
+      transition: all 0.5s ease-in-out;
+      
+      &:hover {
+        color: #3B528B;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      h1 {
+        font-size: 82px;
+        line-height: 100px;
+      }
+      top: auto;
+      bottom: -94px;
+    }
+
+    @media (min-width: 500px) and (max-width: 767.98px) {
+      top: 37%;
+      bottom: auto;
+    }
+  }
+  .next-arrow {
+    right: -1px;
+    margin-top: -0.35rem;
+
+    @media (max-width: 767.98px) {
+      right: 43px;
+    }
+
+    @media (min-width: 500px) and (max-width: 767.98px) {
+      right: -55px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      right: 40px;
+    }
+  }
+
+  .prev-arrow {
+    left: 33px;
+    transform: scaleY(-1);
+    @media (max-width: 767.98px) {
+      left: 77px;
+    }
+
+    @media (min-width: 500px) and (max-width: 767.98px) {
+      left: -21px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      left: 75px;
+    }
+  }
+
+  p {
+    line-height: 26px;
+    margin-bottom: 1.5rem;
+  }
+
+  p, li {
+    font-size: 20px;
+  }
+  .col-12 {
+    padding: 0 0rem;
+  }
+
+  .fact {
+    transition: all 0.5s ease-in-out;
+    width: 369px;
+    margin: 0 auto;
+    margin-left: 4.5rem;
+    // padding-top: 3.4rem;
+    padding-top: 3.2rem;
+  }
+
+  ul {
+    // padding-top: 0.5rem;
+    padding-left: 1.65rem;
+    list-style: none;
+
+    li {
+      position: relative;
+      line-height: 26px;
+      margin-bottom: 1.6rem;
+      &::before {
+        content: ""; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        position: absolute;
+        background-image: url(../img/dot_white.png);
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        font-size: 32px;
+        width: 1em;
+        height: 1.4rem;
+        margin-left: -1.1em; /* Also needed for space (tweak if needed) */
+        top: 6px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(137deg);
+      }
+
+      &:first-child {
+        &::before {
+          top: 17px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding-top: 4rem;
+    h2 {
+      margin-bottom: 1.8rem;
+    }
+    p, li {
+      font-size: 16px;
+      line-height: 24px !important;
+    }
+
+    p {
+      margin-bottom: 1.3rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+
+      li {
+        &:before {
+          content: '';
+          margin-left: -1.9rem;
+          top: 6px !important;
+        }
+      }
+    }
+
+    .container {
+      max-width: 360px;
+    }
+
+    .fact {
+      padding-top: 2.8rem;
+      width: 276px;
+      margin-left: 7.3rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 6.21rem;
+    margin-bottom: 1.14rem;
+
+    h2 {
+      margin-bottom: 2.5rem;
+    }
+
+    .container {
+      max-width: 768px;
+      padding-left: 0.4rem;
+    }
+
+
+    .fact {
+      padding-top: 0rem;
+      margin-top: 1.9rem;
+      margin-left: 4rem;
+
+      p, li {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      ul {
+        padding-right: 1rem;
+        padding-left: 1.5rem;
+        li {
+          margin-bottom: 1.5rem;
+          &:before {
+            content: '';
+            margin-left: -2.06rem;
+            top: 4px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.item {
+  transition: all 0.5s ease-in-out;
+}
+
+.item.slick-slide.slick-center + .slick-slide {
+  transform: "";
+}
+
+.slider {
+  position: relative;
+  z-index: 200;
+  margin-left: -0.7rem;
+
+  @media (max-width: 767.98px) {
+    margin-left: -2rem;
+  }
+}
+
+.item.slick-slide {
+  width: 483px;
+  height: 628px;
+  transition: transform 0.4s;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767.98px) {
+    height: 551px;
+  }
+}
+
+.slick-slide:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.4s;
+  background-image: url(../img/facts/facts-blob.svg);
+
+  @media (max-width: 767.98px) {
+    background-image: url(../img/facts/facts-blob-mobile.svg);
+  }
+}
+
+.slick-slide.slick-current {
+  opacity: 1;
+}
+
+.item.slick-slide.slick-active {
+  transform: scale(0.86) translate(240px);
+}
+
+.item.slick-slide.slick-center {
+  transform: scale(1);
+  z-index: 30;
+}
+
+.slick-center .description {
+  display: inline-block;
+  color: #5b1f74;
+}
+
+.slick-center .title {
+  color: #5b1f74;
+  font-size: 40px;
+}
+
+.gradient-block {
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.item {
+  transition: all 0.1s ease-in-out;
+}
+
+.prev-slider,
+.next-slider {
+  transition: all 0.1s ease-in-out;
+  .gradient-block {
+    z-index: 1;
+  }
+}
+
+.prev-slider {
+  transform: scale(0.86) translate(240px);
+}
+
+.next-slider {
+  transform: scale(0.86) translate(-210px);
+}
+
+.prev-slider .gradient-block {
+  opacity: 1;
+  background: transparent linear-gradient(270deg, #ffffff00 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.next-slider .gradient-block {
+  opacity: 1;
+  background: transparent linear-gradient(90deg, #ffffff00 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+
